@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseTracker | Analytics Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>WalletWatch</h2>
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Analytics</a>
+                <a href="#">Settings</a>
+            </nav>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <h1>Monthly Overview</h1>
+                <p id="current-date"></p>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="card">
+                    <h3>Total Budget</h3>
+                    <p class="amount">$5,000.00</p>
+                </div>
+                <div class="card spent">
+                    <h3>Total Spent</h3>
+                    <p class="amount" id="total-spent">$0.00</p>
+                </div>
+                <div class="card remaining">
+                    <h3>Remaining</h3>
+                    <p class="amount" id="remaining-budget">$5,000.00</p>
+                </div>
+            </section>
+
+            <section class="data-section">
+                <div class="table-container">
+                    <h3>Recent Transactions (Logged via Mobile)</h3>
+                    <table id="transaction-table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dynamically populated -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
