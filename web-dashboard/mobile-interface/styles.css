@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-frame {
+    width: 100%;
+    max-width: 390px; /* Exact dimensions of a standard iPhone screen */
+    height: 844px;
+    background-color: #ffffff;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    border-radius: 40px;
+    border: 8px solid #1e293b; /* Emulates a native device physical bezel */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.logo { font-weight: bold; font-size: 1.2rem; color: #0f172a; }
+
+.balance-banner {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #ffffff;
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: 24px;
+}
+
+.balance-banner span { font-size: 0.85rem; opacity: 0.8; }
+.balance-banner h1 { margin: 0.5rem 0 0 0; font-size: 2.2rem; }
+
+.quick-form {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-group label { font-size: 0.85rem; font-weight: 600; color: #475569; }
+
+.input-group input, .input-group select {
+    padding: 0.85rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    background-color: #f8fafc;
+}
+
+.input-group input:focus, .input-group select:focus {
+    border-color: #3b82f6;
+}
+
+.btn-submit {
+    margin-top: 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover { background-color: #2563eb; }
